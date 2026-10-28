@@ -1,0 +1,167 @@
+:root {
+  --mint: #5e889e;
+  --navy: #1f2a44;
+  --pink: #cd89de;
+  --cream: #f6f1e9;
+  --mist: #dfe7e3;
+  --card: #e6eee9;
+  --text: #27395d;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 40px 16px;
+  background: var(--cream);
+  color: var(--text);
+  font-family: "Nunito Sans", "Trebuchet MS", Verdana, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  background: var(--cream);
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  background: var(--mist);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  padding: 20px;
+  background: var(--mint);
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  gap: 8px;
+  height: 100%;
+  margin: 0;
+  padding: 0 24px;
+  list-style: none;
+  align-items: center;
+}
+
+nav a {
+  display: block;
+  padding: 8px 20px;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover,
+nav a.active {
+  background: var(--navy);
+  color: #ffffff;
+}
+
+
+main {
+  padding: 48px 32px 56px;
+  background:
+    radial-gradient(circle at 20% 15%, rgba(15, 107, 102, 0.18) 0 18%, transparent 19%),
+    radial-gradient(circle at 80% 30%, rgba(31, 42, 68, 0.15) 0 22%, transparent 23%),
+    radial-gradient(circle at 55% 90%, rgba(15, 107, 102, 0.15) 0 25%, transparent 26%),
+    linear-gradient(to bottom, #cfe0db, var(--cream));
+}
+
+h1 {
+  margin: 0 0 24px;
+  font-size: 2.6rem;
+  color: var(--navy);
+}
+
+.home h1 { text-align: center; }
+
+.hero-img,
+.banner-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.intro {
+  max-width: 720px;
+  margin: 24px auto 0;
+  text-align: center;
+}
+
+.products .intro {
+  max-width: none;
+  margin: 24px 0 32px;
+  text-align: left;
+}
+
+
+
+.cards {
+  display: flex;
+  gap: 16px;
+}
+
+.card {
+  flex: 1;
+  padding: 24px 20px;
+  background: var(--card);
+}
+
+.card h2 {
+  margin: 0 0 16px;
+  font-size: 1.1rem;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card figcaption {
+  margin: 4px 0 12px;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #46505e;
+}
+
+.card figure { margin: 0; }
+.card p { margin: 0; }
+
+
+
+
+.contact-grid {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.contact-grid address {
+  flex: 0 0 240px;
+  font-style: italic;
+}
+
+.contact-grid a { color: var(--mint); font-weight: 700; }
+
+.contact-grid img {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+  height: auto;
+}
+
+.contact-main { min-height: 480px; }
