@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../fonts/nunito-sans-400.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../fonts/nunito-sans-600.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../fonts/nunito-sans-700.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --mint: #5e889e;
   --navy: #1f2a44;
@@ -15,7 +39,7 @@ body {
   padding: 40px 16px;
   background: var(--cream);
   color: var(--text);
-  font-family: "Nunito Sans", "Trebuchet MS", Verdana, sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
 }
@@ -44,6 +68,11 @@ header {
   color: #ffffff;
   font-weight: 700;
   text-decoration: none;
+}
+
+.logo img {
+  display: block;
+  height: auto;
 }
 
 nav ul {
@@ -155,7 +184,8 @@ h1 {
   font-style: italic;
 }
 
-.contact-grid a { color: var(--mint); font-weight: 700; }
+/* navy instead of mint: mint on a light background fails the WAVE contrast check */
+.contact-grid a { color: var(--navy); font-weight: 700; }
 
 .contact-grid img {
   flex: 1;
